@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="prefetch" href="img/x_img.png" />
+        <link rel="prefetch" href="img/x_img.png" />
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <h1>Tic-tac-toe</h1>
+        <div class="game">
+            <div class="score">
+                <table>
+                    <tr><th>You</th><th>Computer</th></tr>
+                    <tr><td class="human_score">0</td><td class="computer_score">0</td></tr>
+                </table>
+            </div>
+            <div class="board"><span class="field"></span><span class="field"></span><span class="field"></span>
+                <span class="field"></span><span class="field"></span><span class="field"></span>
+                <span class="field"></span><span class="field"></span><span class="field"></span>
+            </div>
+            <div class="prompt showing">
+                <div class="button_line">
+                    <span class="button">Play</span>
+                </div>
+                <div class="settings">
+                    <input type="radio" name="difficulty" value="easy" id="rb_easy"><label for="rb_easy">easy</label>
+                    <input type="radio" name="difficulty" checked value="medium" id="rb_medium"><label for="rb_medium">medium</label>
+                    <input type="radio" name="difficulty" value="hard" id="rb_hard"><label for="rb_hard">hard</label>
+                </div>
+            </div>
+        </div>
+        <p>The goal is to connect three Xs or three Os. Starting player always uses Xs.</p>
+
+        <script>
+            TICTAC.run();
+        </script>
+    </body>
+</html>
