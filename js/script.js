@@ -301,7 +301,7 @@ var TICTAC = (function () {
                 settings_inputs[i].addEventListener("change", radio_handler);
             }
         }
-    }
+    };
 
     var update_display = function (field_index) {
         var i, css_classes = [], indices;
@@ -409,7 +409,7 @@ var TICTAC = (function () {
 
         update_display();
 
-    }
+    };
 
     /**
     Main
