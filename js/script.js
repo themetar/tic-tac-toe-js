@@ -295,7 +295,6 @@ var TICTAC = (function () {
 
     var setup_radio = function () {
         var settings_inputs = document.querySelectorAll("input[type=\"radio\"]");
-        console.log(settings_inputs);
         if (settings_inputs) {
             for(i = 0; i < 3; i++) {
                 settings_inputs[i].addEventListener("change", radio_handler);
@@ -339,14 +338,12 @@ var TICTAC = (function () {
     var radio_handler = function (e) {
         if (e.target.checked) {
             game_difficulty = e.target.value;
-            console.log(game_difficulty);
         }
     };
 
     var button_handler = function (e) {
-        console.log("play");
         goto_playing_state();
-    }
+    };
 
     var goto_playing_state = function () {
         // if from init state, choose random "previous" starting player
