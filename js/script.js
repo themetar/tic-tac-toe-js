@@ -416,8 +416,10 @@ var TICTAC = (function () {
     **/
     var run = function () {
 
-        console.log(lines_to_check);
-        console.log(lines_per_field);
+        // try preload
+        var images = {x: new Image(), o: new Image()};
+        images.x.src = "img/x_img.png";
+        images.o.src = "img/o_img.png";
 
         // setup gui - board
         setup_gui_board();
@@ -425,11 +427,6 @@ var TICTAC = (function () {
         setup_radio();
         // setup gui - play button
         document.getElementsByClassName("button")[0].addEventListener("click", button_handler);
-        //
-        //update_display();
-
-        //board[choose_computer_move()] = O;
-        //update_display();
 
 
     };
